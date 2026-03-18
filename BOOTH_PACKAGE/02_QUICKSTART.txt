@@ -1,0 +1,32 @@
+Animation Clip Start Delay
+最短の使い方
+
+1. Unity の上部メニューから次を開きます
+Tools/Sebanne/Animation Clip Start Delay
+
+2. Source Clip に対象の AnimationClip を入れます
+
+3. Delay Mode を選びます
+- Seconds: 秒で遅らせます
+- Frames: フレームで遅らせます
+
+4. Delay 値を入力します
+
+5. 必要なら Output File Name を調整します
+
+6. Output Location を選びます
+- Generated
+- Same As Source
+- Custom
+
+7. まず Dry Run を押してください
+処理対象数、結果の長さ、保存先を先に確認できます。
+
+8. 問題がなければ Generate を押します
+元Clipは変更せず、遅延版の新規 Clip を生成します。
+
+注意:
+- 初回は Dry Run を先に行うのがおすすめです
+- Custom の保存先は Assets/ 配下のみです
+- 同名ファイルがある場合は安全に停止します
+- 元Clipを直接書き換えることはありません

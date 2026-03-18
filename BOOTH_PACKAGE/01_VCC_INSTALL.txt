@@ -1,0 +1,26 @@
+Animation Clip Start Delay
+VCC / VPM での導入手順
+
+このツールは VCC / VPM 導入前提です。
+Unity へ手動 import する形式ではありません。
+
+導入手順:
+1. VRChat Creator Companion (VCC) を開きます
+2. Settings を開きます
+3. Packages タブを開きます
+4. Add Repository を押します
+5. 次の URL を追加します
+
+https://sebanne1225.github.io/sebanne-listing/index.json
+
+6. Unity project を開きます
+7. package 一覧で Animation Clip Start Delay を探します
+8. Install または Add を実行します
+
+package 名:
+com.sebanne.animation-clip-start-delay
+
+補足:
+- VCC に listing を追加すると、対象 project の package 一覧から導入できます
+- この BOOTH 配布物だけでは導入は完了しません
+- package 本体は VPM repository から取得されます
