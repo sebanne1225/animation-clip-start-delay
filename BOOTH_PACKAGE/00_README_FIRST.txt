@@ -6,6 +6,9 @@ Animation Clip Start Delay
 このフォルダは、BOOTH 配布用の案内テキスト一式です。
 この zip の中に Unity package 本体は入っていません。
 導入は VCC / VPM から行ってください。
+repo 内では BOOTH_PACKAGE/ を作業用の固定名として使っています。
+BOOTH に貼る最終フォルダ名 / zip 名は別名推奨です。
+この repo の package.json.version (0.1.2) を使った推奨最終名は AnimationClipStartDelay_Booth_Package_v0.1.2 です。
 
 最初は次の順番で読むと分かりやすいです。
 1. 01_VCC_INSTALL.txt
