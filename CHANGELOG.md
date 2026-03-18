@@ -2,7 +2,7 @@
 
 このファイルは `Sebanne Animation Clip Start Delay` の変更履歴を管理します。
 
-## [0.1.1]
+## [0.1.2] - 2026-03-18
 
 ### Changed
 
