@@ -2,6 +2,12 @@
 
 このファイルは `Sebanne Animation Clip Start Delay` の変更履歴を管理します。
 
+## [0.1.2]
+
+### Changed
+
+- 生成時の既定出力先を `Assets/Sebanne/AnimationClipStartDelay/Generated/` に変更し、`Sebanne` と `Generated` の間にツール名を挟んだフォルダ構成へ整理
+
 ## [0.1.0] - 2026-03-18
 
 ### Added
