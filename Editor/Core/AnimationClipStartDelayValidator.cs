@@ -23,14 +23,14 @@ namespace Sebanne.AnimationClipStartDelay.Editor
 
             if (request.SourceClip == null)
             {
-                errorMessage = "Source Clip が未指定です。";
+                errorMessage = "Source Clip（元Clip）が未指定です。";
                 return false;
             }
 
             var sourceAssetPath = AssetDatabase.GetAssetPath(request.SourceClip);
             if (string.IsNullOrWhiteSpace(sourceAssetPath))
             {
-                errorMessage = "AnimationClip として処理できる source asset が見つかりません。";
+                errorMessage = "AnimationClip として処理できる元Clipの asset が見つかりません。";
                 return false;
             }
 
@@ -60,7 +60,7 @@ namespace Sebanne.AnimationClipStartDelay.Editor
 
                     if (frameRate <= MinimumFrameRate || float.IsNaN(frameRate) || float.IsInfinity(frameRate))
                     {
-                        errorMessage = "Frames モードの換算に必要な frameRate を解決できません。";
+                        errorMessage = "Frames モードの換算に必要なフレームレートを解決できません。";
                         return false;
                     }
 

@@ -1,5 +1,7 @@
 # CODEX_HANDOFF
 
+> この文書は開発用のハンドオフ / 設計メモです。エンドユーザー向けの使い方や導入説明ではありません。公開向けの説明は `README.md` を参照してください。
+
 ## Goal
 AnimationClip の開始を、指定した秒数またはフレーム数だけ遅らせた新規 Clip を生成する Unity Editor ツールを作る。
 
@@ -46,18 +48,19 @@ Animation Window 上で手動編集せず、安全に複製生成できるよう
    - Seconds
    - Frames
 3. Delay 値を入力
-4. Output Location Mode を選ぶ
+4. 必要なら Output File Name を調整
+5. Output Location を選ぶ
    - Generated
    - Same As Source
    - Custom
-5. Dry Run を実行して、処理対象数と出力先を確認
-6. Generate を実行して、新規 Clip を生成
+6. Dry Run を実行して、処理対象数と出力先を確認
+7. Generate を実行して、新規 Clip を生成
 
 ---
 
 ## Output Location Rules
 
-### Output Location Mode
+### Output Location
 - Generated
 - Same As Source
 - Custom
@@ -157,16 +160,16 @@ Delay 表現が分かる suffix を付ける。
 - Delay Mode
 - Delay Seconds
 - Delay Frames
-- Output Location Mode
+- Output File Name
+- Output Location
 - Custom Output Folder
-- Output Name Preview
 - Dry Run button
 - Generate button
 
 ### UI Behavior
 - Delay Mode が Seconds の時だけ Delay Seconds 入力を強調
 - Delay Mode が Frames の時だけ Delay Frames 入力を強調
-- Output Location Mode が Custom の時だけ folder 指定 UI を表示
+- Output Location が Custom の時だけ folder 指定 UI を表示
 - 現在の最終出力パスが分かる表示を入れる
 - 初見でも意味が分かりやすい日本語 UI を優先する
 

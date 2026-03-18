@@ -47,7 +47,7 @@ namespace Sebanne.AnimationClipStartDelay.Editor
             EditorGUILayout.HelpBox("元Clipを変更せず、遅延版の新規Clipを生成します。", MessageType.Info);
 
             EditorGUILayout.Space();
-            _sourceClip = (AnimationClip)EditorGUILayout.ObjectField("Source Clip", _sourceClip, typeof(AnimationClip), false);
+            _sourceClip = (AnimationClip)EditorGUILayout.ObjectField("Source Clip（元Clip）", _sourceClip, typeof(AnimationClip), false);
 
             EditorGUILayout.Space(10f);
             EditorGUILayout.BeginVertical(EditorStyles.helpBox);
@@ -68,7 +68,7 @@ namespace Sebanne.AnimationClipStartDelay.Editor
             EditorGUILayout.BeginVertical(EditorStyles.helpBox);
             EditorGUILayout.LabelField("出力", EditorStyles.boldLabel);
             var previousOutputLocationMode = _outputLocationMode;
-            _outputLocationMode = (OutputLocationMode)EditorGUILayout.EnumPopup("Output Location", _outputLocationMode);
+            _outputLocationMode = (OutputLocationMode)EditorGUILayout.EnumPopup("Output Location（保存先）", _outputLocationMode);
             EditorGUILayout.LabelField("保存先を選びます。Generated / 元Clipと同じ場所 / 任意フォルダ から選べます。", EditorStyles.wordWrappedMiniLabel);
             if (previousOutputLocationMode != _outputLocationMode &&
                 _outputLocationMode != OutputLocationMode.Custom &&
@@ -141,7 +141,7 @@ namespace Sebanne.AnimationClipStartDelay.Editor
         {
             EditorGUILayout.BeginHorizontal();
             EditorGUI.BeginChangeCheck();
-            _customOutputFolder = EditorGUILayout.TextField("Custom Output Folder", _customOutputFolder);
+            _customOutputFolder = EditorGUILayout.TextField("Custom Output Folder（任意フォルダ）", _customOutputFolder);
             if (EditorGUI.EndChangeCheck())
             {
                 AnimationClipStartDelayEditorPrefs.SaveCustomOutputFolder(_customOutputFolder);
@@ -182,7 +182,7 @@ namespace Sebanne.AnimationClipStartDelay.Editor
         {
             EditorGUILayout.BeginHorizontal();
             EditorGUI.BeginChangeCheck();
-            var editedValue = EditorGUILayout.TextField("Output File Name", _outputFileNameBase);
+            var editedValue = EditorGUILayout.TextField("Output File Name（保存名）", _outputFileNameBase);
             if (EditorGUI.EndChangeCheck())
             {
                 _outputFileNameBase = AnimationClipStartDelayPathResolver.NormalizeOutputFileNameBase(editedValue);
@@ -221,7 +221,7 @@ namespace Sebanne.AnimationClipStartDelay.Editor
                     EditorGUIUtility.PingObject(createdAsset);
                 }
 
-                _statusMessage = "Generate が完了しました。\nCreated Clip: " + analysis.OutputPath;
+                _statusMessage = "Generate が完了しました。Project ウィンドウで生成ファイルを確認してください。\nCreated Clip: " + analysis.OutputPath;
                 _statusMessageType = MessageType.Info;
                 _hasCustomOutputError = false;
                 return;

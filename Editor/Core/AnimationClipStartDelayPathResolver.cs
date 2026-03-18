@@ -94,7 +94,7 @@ namespace Sebanne.AnimationClipStartDelay.Editor
 
             if (AssetDatabase.LoadMainAssetAtPath(assetPath) != null)
             {
-                errorMessage = "同名ファイルが既に存在するため生成を中断しました。既存ファイルを移動 / 削除 / リネームするか、Output File Name を変えるか、Delay 値を変えるか、Output Location Mode を変えてください: " + assetPath;
+                errorMessage = "同名ファイルが既に存在するため生成を中断しました。既存ファイルを移動 / 削除 / リネームするか、Output File Name を変えるか、Delay 値を変えるか、Output Location を変えてください: " + assetPath;
                 return false;
             }
 
@@ -196,7 +196,7 @@ namespace Sebanne.AnimationClipStartDelay.Editor
                     var sourceAssetPath = AssetDatabase.GetAssetPath(request.SourceClip);
                     if (string.IsNullOrWhiteSpace(sourceAssetPath))
                     {
-                        errorMessage = "Same As Source を使うには source asset path が必要です。";
+                        errorMessage = "Same As Source を使うには元Clipの asset path が必要です。";
                         return false;
                     }
 
@@ -226,7 +226,7 @@ namespace Sebanne.AnimationClipStartDelay.Editor
                     return true;
 
                 default:
-                    errorMessage = "Output Location Mode が不正です。";
+                    errorMessage = "Output Location の指定が不正です。";
                     return false;
             }
         }

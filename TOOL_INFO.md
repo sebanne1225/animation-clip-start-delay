@@ -10,27 +10,28 @@
 
 ## 表示名
 
-- `Sebanne Animation Clip Start Delay`
+- `Animation Clip Start Delay`
 
 ## 想定用途
 
-- 重い `AnimationClip` を Animation Window で手動編集せず、非破壊で開始遅延版 clip を生成する。
-- MMD 由来など、キーが非常に多い clip を安全に複製運用できるようにする。
+- 重い `AnimationClip` を Animation Window で手動編集せず、非破壊で開始遅延版 Clip を生成する。
+- MMD 由来など、キーが非常に多い Clip を安全に複製運用できるようにする。
 
 ## 現在対応していること
 
-- 単一 clip 対応
+- 単一 Clip 対応
 - Seconds / Frames 両対応
 - Dry Run と Generate
 - Generated / Same As Source / Custom の出力先解決
 
 ## 非対応
 
-- 複数 clip 一括処理
-- B 方式、C 方式
+- 複数 Clip 一括処理
+- Clip 全体の長さを維持したまま末尾を切る方式
+- 先頭で初期値を保持してから再生を始める方式
 - 再生プレビュー
 - AnimatorController 側の自動補正
-- FBX 内蔵 clip の直接編集
+- FBX 内蔵 Clip の直接編集
 
 ## 今後やりたいこと
 
