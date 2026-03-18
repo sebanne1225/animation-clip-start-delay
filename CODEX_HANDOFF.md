@@ -70,7 +70,7 @@ Animation Window 上で手動編集せず、安全に複製生成できるよう
 
 ### Output Path Rules
 - Generated:
-  - `Assets/Sebanne/Generated/AnimationClipStartDelay/`
+  - `Assets/Sebanne/AnimationClipStartDelay/Generated/`
 - Same As Source:
   - source clip と同じフォルダ
 - Custom:
@@ -198,7 +198,7 @@ Generate 前に、
 [ClipStartDelay] Animation Events: 2
 [ClipStartDelay] Source Length: 3.267 sec
 [ClipStartDelay] Result Length: 3.767 sec
-[ClipStartDelay] Output Path: Assets/Sebanne/Generated/AnimationClipStartDelay/walk_mmd__delay_0p50s.anim
+[ClipStartDelay] Output Path: Assets/Sebanne/AnimationClipStartDelay/Generated/walk_mmd__delay_0p50s.anim
 [ClipStartDelay] Dry Run Complete
 
 ### Dry Run Must Show
@@ -225,7 +225,7 @@ Generate 前に、
 
 ### Generate Log Example
 [ClipStartDelay] Generate Start
-[ClipStartDelay] Created Clip: Assets/Sebanne/Generated/AnimationClipStartDelay/walk_mmd__delay_0p50s.anim
+[ClipStartDelay] Created Clip: Assets/Sebanne/AnimationClipStartDelay/Generated/walk_mmd__delay_0p50s.anim
 [ClipStartDelay] Applied Float Curves: 412
 [ClipStartDelay] Applied Object Reference Curves: 0
 [ClipStartDelay] Applied Animation Events: 2

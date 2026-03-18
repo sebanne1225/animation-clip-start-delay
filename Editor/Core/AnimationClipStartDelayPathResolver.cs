@@ -8,7 +8,7 @@ namespace Sebanne.AnimationClipStartDelay.Editor
 {
     internal static class AnimationClipStartDelayPathResolver
     {
-        internal const string GeneratedOutputFolder = "Assets/Sebanne/Generated/AnimationClipStartDelay";
+        internal const string GeneratedOutputFolder = "Assets/Sebanne/AnimationClipStartDelay/Generated";
 
         public static string BuildAutomaticOutputFileNameBase(AnimationClip sourceClip, DelayMode delayMode, float delaySeconds, int delayFrames)
         {
