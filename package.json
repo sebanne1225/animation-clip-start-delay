@@ -3,7 +3,7 @@
   "displayName": "Animation Clip Start Delay",
   "version": "0.1.0",
   "unity": "2022.3",
-  "description": "重い AnimationClip を非破壊で複製し、開始を指定秒数またはフレーム数だけ遅らせた clip を生成する Unity Editor ツールです。",
+  "description": "AnimationClip を非破壊で複製し、開始を遅らせた Clip を生成。",
   "author": {
     "name": "sebanne"
   }
