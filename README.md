@@ -22,6 +22,14 @@
 - 同名ファイルが存在する場合は上書きせず、安全に停止します
 - Runtime 実装は最小限で、Editor 主体の package 構成です
 
+## VPM / VCC での導入
+
+VCC の `Settings > Packages > Add Repository` から、次の listing URL を追加してください。
+
+`https://sebanne1225.github.io/sebanne-listing/index.json`
+
+追加後、package 一覧から `Animation Clip Start Delay` を導入できます。
+
 ## 使い方
 
 1. Unity 上部メニューの `Tools/Sebanne/Animation Clip Start Delay` を開きます。
@@ -62,6 +70,12 @@
 - 出力パス
 
 ログ prefix は `[ClipStartDelay]` で統一しているため、Unity Console 上で追跡しやすい構成です。
+
+## Release Asset
+
+GitHub Release には、VPM 配布確認や手動保管に使える package zip を添付します。
+
+- 例: `com.sebanne.animation-clip-start-delay-0.1.0.zip`
 
 ## 制限事項
 

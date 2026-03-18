@@ -1,0 +1,65 @@
+name: Build Release Asset
+
+on:
+  workflow_dispatch:
+  release:
+    types:
+      - published
+
+jobs:
+  build-release-asset:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Get Version
+        id: version
+        uses: zoexx/github-action-json-file-properties@b9f36ce6ee6fe2680cd3c32b2c62e22eade7e590
+        with:
+          file_path: package.json
+          prop_path: version
+
+      - name: Set Asset Name
+        run: |
+          echo "zipFile=com.sebanne.animation-clip-start-delay-${{ steps.version.outputs.value }}.zip" >> $GITHUB_ENV
+
+      - name: Validate Tag Version
+        if: github.event_name == 'release'
+        run: |
+          if [ "${{ github.event.release.tag_name }}" != "${{ steps.version.outputs.value }}" ]; then
+            echo "Release tag and package.json version do not match."
+            echo "Expected tag: ${{ steps.version.outputs.value }}"
+            echo "Actual tag:   ${{ github.event.release.tag_name }}"
+            echo "package.json version: ${{ steps.version.outputs.value }}"
+            exit 1
+          fi
+
+      - name: Create Package Zip
+        run: |
+          zip -r "${{ github.workspace }}/${{ env.zipFile }}" \
+            package.json \
+            README.md \
+            CHANGELOG.md \
+            LICENSE \
+            Documentation~ \
+            Editor \
+            Runtime \
+            Samples~
+
+      - name: Upload Workflow Artifact
+        if: github.event_name == 'workflow_dispatch'
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.zipFile }}
+          path: ${{ github.workspace }}/${{ env.zipFile }}
+
+      - name: Upload Release Asset
+        if: github.event_name == 'release'
+        uses: softprops/action-gh-release@de2c0eb89ae2a093876385947365aca7b0e5f844
+        with:
+          files: ${{ env.zipFile }}
+          tag_name: ${{ github.event.release.tag_name }}
