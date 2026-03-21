@@ -6,7 +6,7 @@
 - Package: `com.sebanne.animation-clip-start-delay`
 - Menu: `Tools/Sebanne/Animation Clip Start Delay`
 - GitHub repo: `https://github.com/sebanne1225/animation-clip-start-delay`
-- VPM source: `https://sebanne1225.github.io/sebanne-listing/source.json`
+- VCC に追加する URL: `https://sebanne1225.github.io/sebanne-listing/index.json`
 
 ---
 
