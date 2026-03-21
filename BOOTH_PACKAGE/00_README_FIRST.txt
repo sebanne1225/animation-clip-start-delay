@@ -1,6 +1,6 @@
 Animation Clip Start Delay
 BOOTH 配布パッケージ案内
-version: 0.1.2
+version: 0.1.3
 
 このツールは、AnimationClip を非破壊で複製し、
 開始を遅らせた新しい Clip を生成する Unity Editor ツールです。

@@ -2,6 +2,14 @@
 
 このファイルは `Sebanne Animation Clip Start Delay` の変更履歴を管理します。
 
+## [0.1.3] - 2026-03-21
+
+### Changed
+
+- README の VCC / VPM 導入手順を `source.json` ベースの案内に整理
+- BOOTH 同梱テキストの案内文を公開向けに調整
+- release asset や公開導線の文言を現在の運用に合わせて更新
+
 ## [0.1.2] - 2026-03-18
 
 ### Changed

@@ -75,7 +75,7 @@ listing repo: `https://github.com/sebanne1225/sebanne-listing`
 
 GitHub Release には、VPM 配布確認や手動保管に使える package zip を添付します。
 
-- 例: `com.sebanne.animation-clip-start-delay-0.1.2.zip`
+- 例: `com.sebanne.animation-clip-start-delay-0.1.3.zip`
 
 ## 制限事項
 
