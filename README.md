@@ -22,13 +22,13 @@
 - 同名ファイルが存在する場合は上書きせず、安全に停止します
 - Runtime 実装は最小限で、Editor 主体の package 構成です
 
-## VPM / VCC での導入
+## VCC / VPM での導入
 
-VCC の `Settings > Packages > Add Repository` から、次の listing URL を追加してください。
+1. VPM source として `https://sebanne1225.github.io/sebanne-listing/source.json` を追加します。
+2. package 一覧から `Animation Clip Start Delay` (`com.sebanne.animation-clip-start-delay`) を追加します。
+3. Unity を開き、package が導入されていることを確認します。
 
-`https://sebanne1225.github.io/sebanne-listing/index.json`
-
-追加後、package 一覧から `Animation Clip Start Delay` を導入できます。
+listing repo: `https://github.com/sebanne1225/sebanne-listing`
 
 ## 使い方
 

@@ -1,30 +1,29 @@
 Animation Clip Start Delay
-最初にお読みください
+BOOTH 配布パッケージ案内
+version: 0.1.2
 
-このたびは Animation Clip Start Delay に興味を持っていただきありがとうございます。
+このツールは、AnimationClip を非破壊で複製し、
+開始を遅らせた新しい Clip を生成する Unity Editor ツールです。
 
-このフォルダは、BOOTH 配布用の案内テキスト一式です。
-この zip の中に Unity package 本体は入っていません。
-導入は VCC / VPM から行ってください。
-repo 内では BOOTH_PACKAGE/ を作業用の固定名として使っています。
-BOOTH に貼る最終フォルダ名 / zip 名は別名推奨です。
-この repo の package.json.version (0.1.2) を使った推奨最終名は AnimationClipStartDelay_Booth_Package_v0.1.2 です。
+主な方針:
+- まず Dry Run で結果を確認します
+- 元 Clip には直接変更を加えません
+- 必要な出力だけを新規 asset として生成します
 
-最初は次の順番で読むと分かりやすいです。
-1. 01_VCC_INSTALL.txt
-2. 02_QUICKSTART.txt
+最初にやること:
+1. repo の README を確認してください
+2. まずは VCC / VPM で導入してください
+3. 導入後は Dry Run を試してください
 
-ツール概要:
-重い MMD モーションなどの AnimationClip を手でずらす代わりに、
-非破壊で遅延版 Clip を生成する Unity Editor ツールです。
+導入の基本:
+- 主導線は VCC / VPM です
+- Git URL 導入は補助扱いです
 
-Unity メニュー位置:
-Tools/Sebanne/Animation Clip Start Delay
+GitHub repo:
+https://github.com/sebanne1225/animation-clip-start-delay
 
-主な注意点:
-- 元Clipは変更しません
-- まず Dry Run で確認してから Generate してください
-- Custom の保存先は Assets/ 配下のみ指定できます
-- 同名ファイルがある場合は上書きせず安全に停止します
+VPM source.json:
+https://sebanne1225.github.io/sebanne-listing/source.json
 
-分からなくなった場合は、まず 01_VCC_INSTALL.txt を確認してください。
+このフォルダには、BOOTH から購入した方向けの最小案内だけを入れています。
+詳しい仕様や制限事項は README を参照してください。
