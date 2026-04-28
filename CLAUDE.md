@@ -38,7 +38,6 @@
 - `Custom` 出力先は `Assets/` 配下限定
 - 既存同名 asset は上書きしない
 - まず短い plan を出してから作業
-- まだ commit / push はしない
 
 ## Key Files
 
