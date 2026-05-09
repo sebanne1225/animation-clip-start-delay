@@ -10,7 +10,7 @@
 ## Current State
 
 - repo root が package の source of truth です。`package.json`、`Editor/`、`Runtime/`、`Documentation~/`、`Samples~/`、`README.md`、`CHANGELOG.md`、release workflow が root に揃っています。
-- `package.json` は `0.1.3`、ローカル HEAD は `991bbad` (`main`) です。tag は `0.1.3` まであります。
+- `package.json` は `0.1.3` です。tag は `0.1.3` まであります。
 - main UI は `Editor/UI/AnimationClipStartDelayWindow.cs` にあり、menu は `Tools/Sebanne/Animation Clip Start Delay` です。
 - 実装済み機能は「単一 `AnimationClip`」「`Seconds` / `Frames` 指定」「`Dry Run`」「`Generate`」「`Generated / Same As Source / Custom` 出力先」です。
 - Generate は元 clip を直接変更せず、新規 `AnimationClip` asset を生成します。float curve / object reference curve / `AnimationEvent` をまとめて後ろへずらします。
@@ -56,6 +56,5 @@
 - package: `com.sebanne.animation-clip-start-delay`
 - version: `0.1.3`
 - latest tag: `0.1.3`
-- HEAD: `991bbad` (`main`)
 - release asset 名: `com.sebanne.animation-clip-start-delay-0.1.3.zip`
 - 既定出力先: `Assets/Sebanne/AnimationClipStartDelay/Generated/`
