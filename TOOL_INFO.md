@@ -1,16 +1,13 @@
 # TOOL_INFO
 
-## ツール名
+## 基本情報
 
-- AnimationClipStartDelay
-
-## package名
-
-- `com.sebanne.animation-clip-start-delay`
-
-## 表示名
-
-- `Animation Clip Start Delay`
+- ツール名: `Animation Clip Start Delay`
+- package名: `com.sebanne.animation-clip-start-delay`
+- 表示名: `Animation Clip Start Delay`
+- Runtime asmdef: `Sebanne.AnimationClipStartDelay`
+- Editor asmdef: `Sebanne.AnimationClipStartDelay.Editor`
+- 現在 version: `0.1.3`
 
 ## 想定用途
 
