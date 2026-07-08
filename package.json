@@ -4,6 +4,10 @@
   "version": "0.1.3",
   "unity": "2022.3",
   "description": "AnimationClip を非破壊で複製し、開始を遅らせた Clip を生成。",
+  "documentationUrl": "https://github.com/sebanne1225/animation-clip-start-delay/blob/main/README.md",
+  "changelogUrl": "https://github.com/sebanne1225/animation-clip-start-delay/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/sebanne1225/animation-clip-start-delay/blob/main/LICENSE",
+  "url": "https://github.com/sebanne1225/animation-clip-start-delay",
   "author": {
     "name": "sebanne"
   }
