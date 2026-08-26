@@ -39,21 +39,6 @@
 - 既存同名 asset は上書きしない
 - まず短い plan を出してから作業
 
-## Key Files
-
-- `Editor/UI/AnimationClipStartDelayWindow.cs`
-- `Editor/Core/AnimationClipStartDelayProcessor.cs`
-- `Editor/Core/AnimationClipStartDelayPathResolver.cs`
-- `Editor/Core/AnimationClipStartDelayValidator.cs`
-- `Editor/Core/AnimationClipStartDelayModels.cs`
-- `Editor/Utility/AnimationClipStartDelayEditorPrefs.cs`
-- `Editor/Diagnostics/AnimationClipStartDelayLog.cs`
-- `README.md`
-- `.github/workflows/release.yml`
-
 ## Resume Notes
 
-- package: `com.sebanne.animation-clip-start-delay`
 - tag 履歴（追記 only）: `0.1.0` (2026-03-18) → `0.1.1` (2026-03-18) → `0.1.2` (2026-03-18) → `0.1.3` (2026-03-21)
-- release asset 名の形式: `com.sebanne.animation-clip-start-delay-{version}.zip`（version は最新 tag = `package.json` と一致。release workflow が検証）
-- 既定出力先: `Assets/Sebanne/AnimationClipStartDelay/Generated/`
